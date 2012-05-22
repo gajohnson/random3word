@@ -1,0 +1,15 @@
+{
+	"name": "random3word",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Add a 'random' button to threewordphrase.com",
+	"permissions": [
+		"http://threewordphrase.com"
+	],
+	"content_scripts": [
+		{
+			"matches": ["http://threewordphrase.com/*"],
+			"js": ["random.js"]
+		}
+	]
+}
